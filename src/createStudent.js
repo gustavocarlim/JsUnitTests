@@ -21,5 +21,4 @@ return {
   feedback: () => "Eita pessoa boa!"
 };
 };
-console.log(createStudent("Gustavo"))
 module.exports = createStudent;
