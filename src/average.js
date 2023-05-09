@@ -12,21 +12,17 @@
 */
 
 const average = (array) => {
-let sum = 0
-  for (let index = 0; index < array.length; index++) {
-      sum += array[index];
+  let sum = 0;
+  for (let index = 0; index < array.length; index += 1) {
+    sum += array[index];
   }
   let media = sum / array.length;
-  if (array.some((item) => typeof item === "string")){
+  if (array.some((item) => typeof item === 'string')) {
     return undefined;
   }
   if (array.length === 0) {
-    return undefined
+    return undefined;
   }
-  else {
-    return Math.round(media) ;
-  }   
+    return Math.round(media);
 };
-
 module.exports = average;
-
